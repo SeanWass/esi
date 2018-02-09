@@ -1,0 +1,121 @@
+@import '../../config-styles/variables';
+
+.rankingSummary {
+    background: $ranking-sum-background;
+    padding: 40px 150px 70px 150px;
+}
+
+.rankingSummary__header {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    h2 {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin: 0;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.3px;
+        line-height: 1;
+    }
+
+    > span {
+        display: table-cell;
+        vertical-align: center;
+        width: 50px;
+        line-height: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.rankingSummary__list {
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+}
+
+.rankingSummary__item {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    background: $ranking-toggle-active;
+    color: $color-prime;
+
+    &.active {
+        color: $ranking-toggle-active;
+        background: $color-prime;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.rankingSummary__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        background: $color-prime;
+        color: $ranking-table-header;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-right: 2px solid #000;
+
+        &:last-of-type {
+            border-right-color: $color-prime;
+        }
+    }
+
+    td {
+        border-right: 2px solid $color-prime;
+        border-bottom: 2px solid $color-prime;
+        color: #fff;
+        background: #000;
+        padding: 5px 8px;
+        font-size: 14px;
+
+        &:nth-of-type(2) {
+            color: #000;
+            background: $ranking-table-cell-background-second;            
+        }
+
+        &:last-of-type {
+            background: $ranking-table-cell-background-last;
+        }
+    }
+
+    thead {
+        border-top: 2px solid $color-prime;
+        border-right: 2px solid $color-prime;
+        border-left: 2px solid $color-prime;
+    }
+
+    tbody {
+        border: 2px solid $color-prime;
+    }
+}
+
+.rankingSummary__content {
+    h3 {
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+    }
+}

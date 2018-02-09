@@ -1,0 +1,15 @@
+@import '../../config-styles/mixins';
+@import '../../config-styles/variables';
+
+.contactUs__body {
+    background: #ffffff;
+}
+
+.contactUs__imageWrapper {
+    line-height: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

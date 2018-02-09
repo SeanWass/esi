@@ -1,0 +1,59 @@
+@import '../../config-styles/variables';
+
+.navigation {
+    background: rgba(#000, 0.8);
+
+    @media screen and (min-width: 800px) {
+        background: $color-nav-background;
+    }
+    
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    
+    @media screen and (min-width: 800px) {
+        display: table;
+        width: 100%;
+    }
+}
+
+.navigation__item {
+    display: block;
+    width: 100%;
+
+    a {
+        display: block;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.5rem;
+        text-align: center;
+        outline: none;
+
+        &:hover {
+            color: $color-nav-hover;
+        }
+    }
+
+    &.active {
+        a {
+        color: $color-nav-hover;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        display: table-cell;
+        vertical-align: middle;
+        width: auto;
+        
+        a {
+            color: #fff;
+            font-size: 15px;
+            text-transform: none;
+        }
+    }
+}

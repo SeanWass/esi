@@ -1,0 +1,130 @@
+@import '../../config-styles/variables';
+
+.events {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: url('../../assets/images/png/events/background.png');
+    position: relative;
+}
+
+.events__header {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    h2 {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin: 0;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: $events-sum-header;
+        letter-spacing: 0.3px;
+        line-height: 1;
+    }
+
+    > span {
+        display: table-cell;
+        vertical-align: center;
+        width: 50px;
+        line-height: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.events__list {
+    padding: 0 150px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.events__item {
+    position: relative;
+    padding: 0 5px;
+}
+
+.events__textWrapper {
+    background: #fff;
+    text-align: center;
+    color: $events-sum-text;
+    padding-bottom: 16px;
+
+    h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+
+    h5 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+}
+
+.events__imgWrapper {
+    line-height: 0;
+    display: block;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.events__iconWrapper {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    padding-top: 10px;
+
+    img {
+        width: 50px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.events__sliderButton {
+    position: absolute;
+    bottom: 145px;
+    color: #fff;
+    width: 40px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    &.prev {
+        left: 100px;
+    }
+
+    &.next {
+        right: 100px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

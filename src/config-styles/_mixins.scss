@@ -1,0 +1,52 @@
+//Placeholder
+@mixin input-placeholder($color, $textTransform) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		text-transform: $textTransform;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		text-transform: $textTransform;
+	} /* Firefox 19+ */
+	&:-moz-placeholder {
+		color: $color;
+		text-transform: $textTransform;
+	} /* Firefox 18- */
+	&:-ms-input-placeholder {
+		color: $color;
+		text-transform: $textTransform;
+	}
+}
+
+@mixin input-transparent-autofill($color) {
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-text-fill-color: $color;
+		transition: background-color 5000s ease-in-out 0s;
+	}
+}
+
+//Generic min-width media query (To be enhanced)
+@mixin mq($m1, $m2: null) {
+	@if ($m2) {
+		@media screen and (min-width: $m1) and (max-width: $m2) {
+			@content;
+		}
+	} @elseif($m1) {
+		@media screen and (min-width: $m1) {
+			@content;
+		}
+	} @else {
+		@warn "Your media query argument isn't an acceptable format. (px, em, rem or %)";
+	}
+}
+
+//Position
+@mixin center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

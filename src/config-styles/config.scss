@@ -1,0 +1,33 @@
+//General Resets
+//Font family
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+	height: 100%;
+
+	> div {
+
+		&:first-of-type {
+			height: 100%;	
+		}
+	}
+}
+
+body.overflowYHidden {
+	overflow-y: hidden;
+}
+
+button, input, textarea {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.7px;
+}
+
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+@import 'layout';

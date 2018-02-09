@@ -1,0 +1,162 @@
+@import '../../config-styles/variables';
+
+.header {
+    background: $color-header-background;
+    display: table;
+    width: 100%;
+
+    @media screen and (min-width: 800px) {
+        padding: 35px 120px 35px 30px;
+    }
+}
+
+.header__rightCol {
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+}
+
+.header__contactWrapper {
+    display: block;
+    width: 100%;
+}
+
+.header__info {
+    display: inline-block;
+
+    > div {
+        display: inline-block;
+        text-align: right;
+        
+        span {
+            display: table-cell;
+            vertical-align: middle;
+
+            //icon
+            &:first-of-type {
+                line-height: 0;
+            }
+
+            // Text
+            &:last-of-type {
+                color: #fff;
+                padding-left: 10px;
+                font-size: 10px;
+                letter-spacing: 0.3px;
+            }
+        }
+
+        a {
+            display: table-cell;
+            vertical-align: middle;
+            color: #fff;
+            text-decoration: none;
+            padding-left: 10px;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+
+            &:hover {
+                color: $color-prime;
+            }
+        }
+    }
+}
+
+.header__social {
+    display: inline-block;
+    padding-left: 20px;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+}
+
+.header__logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    @media screen and (min-width: 800px) {
+        width: 200px;
+    }
+}
+
+.header__menuToggle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+}
+
+.header__navWrapper {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    z-index: 1;
+
+    &.active {
+        display: block;
+    }
+
+    @media screen and (min-width: 800px) {
+        position: static;
+        display: block;
+        width: 362px;
+        margin-left: auto;
+    }
+}
+
+.header__socialToggle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+}
+
+.header__socialWrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    right: 0;
+    z-index: 1;
+    
+
+    &.active {
+        display: block;
+    }
+}

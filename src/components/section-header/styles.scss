@@ -1,0 +1,50 @@
+@import '../../config-styles/variables';
+
+.sectionHeader {
+
+	background: $color-neutral;
+	padding: 2rem 2rem 2rem 0; //Zero padding on the left as this will be taken care of by the header. Reason for this is for the strikethrough
+	position: relative;
+	z-index: 0;
+
+	h2 {
+		margin: 0;
+		padding: 0 1rem 0 2rem;
+		font-size: 0.8125rem;
+		color: darken($color-neutral, 25%);
+		background: $color-neutral;
+		z-index: 1;
+		display: inline-block;
+		line-height: 1;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	span {
+		position: absolute;
+		right: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: $color-prime;
+		font-size: 0.8125rem;
+		text-transform: uppercase;
+		background: $color-neutral;
+		padding: 0.25rem 0 0.25rem 1.5rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: calc(100% - 2rem); //100% width - padding
+		height: 2px;
+		display: block;
+		background: darken($color-neutral, 5%);
+		z-index: -1;
+	}
+}

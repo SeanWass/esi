@@ -1,0 +1,55 @@
+@import '../../config-styles/mixins';
+@import '../../config-styles/variables';
+
+.order__body {
+    background: #ffffff;
+    position: relative;
+}
+
+.order__imageWrapper {
+    display: block;
+    line-height: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.order__content {
+    background: rgba(#ffffff, 0.3);
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    h1 {
+        background: rgba($color-header-background, 0.9);
+        color: #ffffff;
+        font-weight: 400;
+        margin: 0 auto;
+        width: 475px;
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        line-height: 1;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.order__label {
+    display: block;
+}

@@ -1,0 +1,91 @@
+@import '../../config-styles/variables';
+
+.footer {
+    text-align: center;
+    background: $footer-background;
+}
+
+.footer__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+}
+
+.footer__menuItem {
+    display: table-cell;
+    vertical-align: middle;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 20px 16px;
+
+        &:hover {
+            color: $color-prime;
+        }
+    }
+}
+
+.footer__logoWrapper {
+    line-height: 0;
+    width: 290px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.footer__contact {
+    padding-top: 20px;
+
+    span {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    a {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        margin-top: 10px;
+
+        &:hover {
+            color: $color-prime;
+        }
+    }
+}
+
+.footer__social {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    li {
+        display: table-cell;
+        vertical-align: middle;
+
+        a {
+            display: block;
+            padding: 0 10px;
+        }
+    }
+}
+
+.footer__copyright {
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+}

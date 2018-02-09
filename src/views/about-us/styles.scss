@@ -1,0 +1,39 @@
+@import '../../config-styles/mixins';
+@import '../../config-styles/variables';
+
+.aboutUs__body {
+    background: #ffffff;
+}
+
+.aboutUs__imageWrapper {
+    line-height: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.aboutUs__headerWrapper {
+    h2 {
+        font-size: 2.5rem;
+        color: #ffffff;
+        margin: 0;
+        padding: 0.5rem;
+        letter-spacing: 0.7px;
+        background: $color-about-header;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: inline;
+    }
+}
+
+.aboutUs__content {
+    margin-top: 0.5rem;
+    p {
+        margin: 0;
+        padding: 0.5rem;
+        letter-spacing: 0.7;
+        line-height: 1.3;
+    }
+}

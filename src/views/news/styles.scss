@@ -1,0 +1,47 @@
+@import '../../config-styles/mixins';
+@import '../../config-styles/variables';
+
+.news__content {
+    background: #222222;
+    h1 {
+        font-size: 1.25rem;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.7px;
+        font-weight: 400;
+    }
+
+    padding: 1rem;
+
+    p {
+        color: #fff;
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+        line-height: 1.5;
+    }
+}
+
+.news__imgWrapper {
+    display: block;
+    line-height: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.news__backButton {
+    background: #222222;
+    padding: 0 1rem 1rem 1rem;
+    border-top: 2px solid $header-border;
+
+    a {
+        text-decoration: none;
+        color: $header-border;
+        display: inline-block;
+        padding-top: 1rem;
+    }
+}
